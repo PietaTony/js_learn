@@ -1,0 +1,23 @@
+{
+  "name": "extending-test",
+  "version": "1.0.0",
+  "description": "extending test",
+  "main": "extending.js",
+  "scripts": {
+    "test": "node exending"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PietaTony/js_learn/node.js/express/extending"
+  },
+  "keywords": [
+    "express",
+    "extending"
+  ],
+  "author": "Chia-Hao,Liu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "0.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "express-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chia-Hao,Liu",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "forecastio": "^1.0.2",
+    "zippity-do-dah": "0.0.3"
+  },
+  "devDependencies": {},
+  "description": "express test",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/PietaTony/js_learn/node.js/express"
+  },
+  "keywords": [
+    "express",
+    "views",
+    "middleware",
+    "routing",
+    "extending"
+  ]
+}

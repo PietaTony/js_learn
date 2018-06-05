@@ -1,0 +1,21 @@
+{
+  "name": "url-test",
+  "version": "1.0.0",
+  "description": "url test",
+  "main": "url.js",
+  "scripts": {
+    "test": "node url"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PietaTony/js_learn/node.js/url"
+  },
+  "keywords": [
+    "url"
+  ],
+  "author": "Chia-Hao,Liu",
+  "license": "ISC",
+  "dependencies": {
+    "url": "^0.11.0"
+  }
+}

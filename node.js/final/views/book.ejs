@@ -1,0 +1,34 @@
+<% include header %>
+
+   <body>
+      <div data-role="page" id="book1" data-title="book"> 
+         <div data-role="header" > 
+            <h1>預約</h1>
+         </div>
+         <h2>請輸入以下資料</h2>
+            <form method="post" role="form" name="form">
+              <fieldset>
+                  團體名稱<input type=text name="teamName" id="teamName" class="form-group" required><br>
+                  團體人數<input type=number name="peoples" id="peoples" class="form-group" required><br>
+                  開始時間<input type=datetime-local name="startTime" id="startTime" class="form-group" onblur="updateEndTime()" required><br>
+                  結束時間<input type=datetime-local name="endTime" id="endTime" class="form-group" onblur="checkEndTime()"  required><br>
+                  聯絡人姓名<input type=text name="name" id="name" class="form-group"required><br>
+                  連絡電話<input type=tel name="tel" id="tel" class="form-group" required><br>
+                  連絡信箱<input type=email name="email" id="email" class="form-group" required><br>
+              <input type="submit" class="pure-button-primary" value="送出">
+              </fieldset>
+            </form>
+            <script>
+               function checkEndTime(){
+                  if(document.form.endTime.value < document.form.startTime.value){
+                        alert("結束時間設定錯誤");
+                        updateEndTime();
+                  }
+               }
+               function updateEndTime(){
+                  document.form.endTime.value = document.form.startTime.value;
+               }
+            </script>
+         </div>
+      </div>
+<% include flooter %>

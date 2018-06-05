@@ -1,0 +1,29 @@
+<% include header %>
+	<% if (entries.length) { %>
+	  <% entries.forEach(function(entry) { %>
+
+	  	<div data-role="main" >
+	    <ul data-role="listview">
+	    <li data-role="collapsible" data-iconpos="right">
+	    <h1>log</h1>
+	    <ol data-role="listview" id="mvlist" data-count-theme="b" data-filter="true">
+
+			<li class="ui-li-has-count ui-li-has-thumb">
+			<a class="ui-btn uibtn-icon-right ui-icon-carat-r" style="padding-left: 20px;">
+				<h1> <%= entry.teamName %> </h1>
+				<p> 人數:<%= entry.peoples %> </p>
+				<p> 時段:<%= entry.startTime %> - <%= entry.endTime %> </p>
+				<h2> <%= entry.name %> </h2>
+				<p> 電話:<%= entry.tel %> </p>
+				<p> 信箱:<%= entry.email %> </p>
+			</a>
+		</li>
+	  <% }) %>
+	  	</ol>
+	   </li>
+	   </ul>
+	  </div>
+	<% } else { %>
+	  Nothing 
+	<% } %>
+<% include flooter %>

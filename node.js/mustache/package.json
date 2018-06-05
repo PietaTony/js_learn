@@ -1,0 +1,21 @@
+{
+  "name": "mstache-test",
+  "version": "1.0.0",
+  "description": "mstache test",
+  "main": "mstache.js",
+  "scripts": {
+    "test": "node mstache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PietaTony/js_learn/node.js/mstache"
+  },
+  "keywords": [
+    "mstache"
+  ],
+  "author": "Chia-Hao,Liu",
+  "license": "ISC",
+  "dependencies": {
+    "mustache": "^2.3.0"
+  }
+}

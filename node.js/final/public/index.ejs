@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html> 
+   <head>
+      <meta charset="utf-8"/> 
+      <meta name="viewport" content="width=devicewidth, initial-scale=1"> 
+      <title>index.html</title> 
+      <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" > 
+      <script src="jquery-2.1.4.min.js"></script>
+      <script src="jquery.mobile-1.4.5.min.js"></script>
+   </head> 
+
+   <body>
+      <div data-role="page" id="start" data-title="青山農場" style="text-align:center"> 
+         <div data-role="main" class="ui-content">  
+            <h1>青山農場</h1>
+
+            <img src="mark.jpg">
+            <p>是否進入?</p>
+
+            <a href="#home"   class="ui-btn ui-btn-inline ui-icon-check  ui-btn-icon-left ui-corner-all ui-shadown">確定</a>
+            <a href="#"       class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right ui-corner-all ui-shadown">取消</a>
+         </div>
+      </div>
+
+
+      <!--首頁-->
+      <div data-role="page" id="home" data-title="青山農場-首頁"> 
+      <div data-role="header" > 
+         <h1>青山農場</h1>
+      </div>
+
+      <div data-role="main" class="ui-content"> 
+         <p>坪林青山農場座落於新北市坪林區，佔地面績廣大，坪林青山農場更提供露營、烤肉為主題，打造一個多樣化的休閒農場。坪林青山農場位於山明水秀之地，是一處學生聚會、全家出遊的最佳去處，在這裡盡情享受釣魚、捉蝦、營火晚會、賞花與觀星之美。</br>
+            </br>
+            </br>
+            </br>
+            </br>
+            地址：232新北市坪林區石槽村48-1號</br>
+            電話：02-2665-6165</br>
+            營業時間：07:00–22:00</br>
+         </p>
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b" data-id="main-footer"> 
+         <div data-role="navbar" data-iconpos="bottom"> 
+            <ul>
+               <li><a href="#home"     data-icon="home" data-transition="slideup">首頁</a></li>
+               <li><a href="#map"      data-icon="location" data-role="header" data-theme="b" data-transition="slideup">
+                  交通地圖</a></li>
+               <li><a href="#author"  data-icon="user" data-role="header" data-theme="b" data-transition="slideup">
+                  內容介紹</a></li>
+               <li><a href="https://www.facebook.com/%E9%9D%92%E5%B1%B1%E8%BE%B2%E5%A0%B4-194752533890074/" data-icon="search" data-role="header" data-theme="b"  data-ajax="false" data-transition="slideup"> 臉書粉絲團</a></li>
+               <li><a href="book" data-icon="tag" data-role="header" data-theme="b" data-transition="slideup">預約</a></li>
+            </ul> 
+         </div>
+
+         <h3>地址：232新北市坪林區石槽村48-1號</br> 
+             電話：02-2665-6165</br>
+             營業時間：07:00–22:00
+         </h3>   
+      </div>
+      </div>
+
+      <!--內容介紹-->
+      <div data-role="page" id="author" data-title="內容介紹"> 
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="返回"> 
+            
+      <h1>內容介紹</h1>
+      <a href="#jqm" data-rel="popup" class="ui-btn ui-btn-right ui-icon-info ui-btn-icon-left">關於
+      <div data-role="popup" id="jqm" class="uicontent">
+      <p>資料來源:官方網站</p>
+      </div>
+      </a> 
+      </div>
+
+      <div data-role="collapsible-set">
+         <div data-role="collapsible" >
+            <h2>青山農場門票</h2>
+            <div data-role="collapsible">
+               <h3>一.清潔入場費</h3>
+               <p>1.成人-每人$100元</br>
+                  2.兒童-每人$50元</br>
+                  3.車輛-免費入場(請遵守指示停放)</br>
+                  4.寵物-免費入場(請約束行為)
+               </p>
+            </div>
+
+            <div data-role="collapsible">
+               <h3>二.露營費用</h3>
+               <p>1.自搭帳篷或炊事帳營位 每帳$200元</br>
+                  2.租用毛毯每件$50元；睡墊每片$200元</br>
+                  3.租用桌椅 每組$200元</br>
+                  4.租用茶道具每組$300元(可自備茶葉，亦可當場購買)</br>
+                  5.租用瓦斯爐 每組$250元(自備燈具費用照收)</br>
+                  6.冷水浴室不收費；熱水浴室每人每次$50元</br>
+                  ※ 以上出租用品需付押金或質押有效証件，如有損毀需照價賠償
+               </p>
+            </div>
+
+            <div data-role="collapsible">
+               <h3>三.住宿費用</h3>
+               <p>1.八人份套房(彈簧床)每間$3000元</br>
+                  2.八人份套房(和式)每間$2500元</br>
+                  3.通舖每人$250元</br>
+                  *套房內設衛浴設備</br>
+                  *通舖內無個人衛浴。冷水浴室不收費；熱水浴室每人每次$50元</br>
+                  *套房每加一人加收$250元；退房時間請於次日上午11點之前
+               </p>
+            </div>
+
+            <div data-role="collapsible">
+               <h3>四.膳食價目</h3>
+               <p>1.早餐每桌$600元起/10人份(中式)</br>
+                  *稀飯、肉鬆、花生、麵筋、花瓜、礁溪豆腐。</br>
+                  2.午/晚餐每桌$2500元起/10人份(合菜)</br>
+                  *蔥油白斬雞、荀絲蹄膀、香魚、溪蝦、透抽炒西芹、高麗菜(或時令青菜)、排骨湯。</br>
+                  3.學生經濟餐每桌$1500元起/10人份(合菜)</br>
+                  *學生經濟餐菜色請來電洽詢。</br>
+                  4.烤炊食品(A)：$2500元/10人份</br>
+                  *排骨肉、雞翅、玉米、甜不辣、豬血糕、花枝丸、豆干、香腸、青椒、生香茹、綠豆湯、土司麵包、木炭，含借用烤肉用具。</br>
+                  5.烤炊食品(B)：學生優惠$2000元/10人份</br>
+                  *豬肉片、雞翅、玉米、甜不辣、貢丸、米腸、香腸、豆干、綠豆湯、土司麵包、木炭，含借用烤肉用具。<br>
+                  *食材類請於三日之前來電訂購，三日內恕難預訂。
+               </p>
+            </div>
+
+            <div data-role="collapsible">
+               <h3>五.鐵棚收費</h3>
+               <p>使用場區內鐵皮頂棚空間，皆須預訂及付費使用，頂棚預訂劃位及費用請來電洽詢。</p>
+            </div>
+
+            <div data-role="collapsible">
+               <h3>六.營火收費</h3>
+               <p>高空點火及營火材料每組$1500元</p>
+            </div>
+
+            <div data-role="collapsible">
+               <h3>七.天燈</h3>
+               <p>天燈每頂$300元</p>
+            </div>
+
+         </div>
+         <div data-role="collapsible">
+            <h2>青山農場烤肉特色</h2>
+            <div data-role="collapsible">
+               <h3>農場特色</h3>
+               <p>
+                  1.青山綠水腹地廣大，適合休閒郊遊、舉辦活動。</br>
+                  2.可停大型遊覽車，適合團體舉辦活動。</br>
+                  3.營火晚會高空點火設備，別具特色。</br>
+                  4.大小型三處室內活動廣場，提供租借。</br>
+                  5.種植文旦、柚、李、水蜜桃等果樹供觀賞。</br>
+                  6.種植各種花草供遊客觀賞。
+               </p>
+            </div>
+
+            <div data-role="collapsible">
+               <h3>農場注意事項</h3>
+               <p>
+                  1.遊客自身安全請自行負責；遊客個人財產亦請隨身攜帶自行保管。</br>
+                  2.大型團體舉辦活動時請自備醫護人員隨行。</br>
+                  3.本網頁資訊更新恕不另行通知。</br>
+                  4.每年九月至十一月為本農場大型團體舉辦活動旺季，個人遊客建議先來電詢問場地情形。
+               </p>
+            </div>
+         </div>
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b" data-id="main-footer"> 
+         <div data-role="navbar" data-iconpos="bottom"> 
+            <ul>
+               <li><a href="#home"     data-icon="home" data-transition="slideup">首頁</a></li>
+               <li><a href="#map"      data-icon="location" data-role="header" data-theme="b" data-transition="slideup">
+                  交通地圖</a></li>
+               <li><a href="#author"  data-icon="user" data-icon="location" data-role="header" data-theme="b" data-transition="slideup">
+                  內容介紹</a></li>
+               <li><a href="https://www.facebook.com/%E9%9D%92%E5%B1%B1%E8%BE%B2%E5%A0%B4-194752533890074/" data-icon="search" data-role="header" data-theme="b"  data-ajax="false" data-transition="slideup"> 臉書粉絲團</a></li>
+               <li><a href="book" data-icon="tag" data-role="header" data-theme="b" data-transition="slideup">預約</a></li>
+            </ul> 
+         </div> 
+         <h3>地址：232新北市坪林區石槽村48-1號</br> 
+             電話：02-2665-6165</br>
+             營業時間：07:00–22:00
+         </h3>
+      </div>
+      </div>
+
+      <div data-role="page" data-dialog="true" id="map" data-title="青山農場:交通地圖"> 
+         <div data-role="header"> 
+            <h1>交通地圖</h1>
+         </div> 
+         <div data-role="main" class="uicontent"> 
+            <a href="https://www.google.com.tw/maps/dir//232%E6%96%B0%E5%8C%97%E5%B8%82%E5%9D%AA%E6%9E%97%E5%8D%80%E7%9F%B3%E6%A7%BD%E6%9D%9148-1%E8%99%9F%E9%9D%92%E5%B1%B1%E8%BE%B2%E5%A0%B4/@24.916596,121.7018177,13.25z/data=!4m15!1m6!3m5!1s0x0:0xfad50646bdbbf553!2z6Z2S5bGx6L6y5aC0!8m2!3d24.8950982!4d121.7361975!4m7!1m0!1m5!1m1!1s0x3467f924058d67cb:0xfad50646bdbbf553!2m2!1d121.736193!2d24.8951?hl=zh-TW"><img src="map.PNG" style="width:100%;height:auto;" >
+         </div> 
+      </div>
+   </body>
+</html> 

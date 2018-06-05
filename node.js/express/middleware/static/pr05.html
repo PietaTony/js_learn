@@ -1,0 +1,175 @@
+<html>
+
+	<head>
+		<title>練習5 Javascript 表單 input element</title>
+		
+		<!-- basic -->
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+			<script src="js/bootstrap.min.js"></script>
+		<!-- basic -->
+	</head>
+
+	<body>
+		<form name=form1>
+			輸入結果<input type=textarea class="form-control" name=inputResult size=60><br>
+			姓名<input type=text name=name class="form-text text-muted" onblur="updateInputResult()"><br>
+			性別<input type=radio name=sex value="男生" onclick="updateInputResult()">男生
+				<input type=radio name=sex value="女生" onclick="updateInputResult()">女生<br>
+			年齡<input type=number name=age class="form-text text-muted" onblur="updateInputResult()"><br><!-- 年齡只能輸入數字 -->
+			輸入密碼<input type=password class="form-text text-muted" name=pw onblur="updateInputResult()"><br>
+			重新輸入<input type=password class="form-text text-muted" name=rePw onchange="updateInputResult()"><br>
+			班級<select name=class onchange="updateInputResult()" size=1>
+				<option value="請選擇" selected>請選擇
+				<option value="資工1A">資工1A
+				<option value="資工1B">資工1B
+				<option value="資工2A">資工2A
+				<option value="資工2B">資工2B
+				<option value="資工3A">資工3A
+		</form>
+		
+		<script>
+			<!-- function函數區 -->
+				function updateInputResult()
+				{
+					var value=returnName()+" "+returnSex()+" "+returnAge()+" "+returnPwStatus()+" "+returnClass();
+					
+					document.form1.inputResult.value=value;
+				}
+				
+				<!-- 回傳名字 -->
+				function returnName()
+				{
+					var ans="姓名:";
+					
+					if(document.form1.name.value!="")
+					{
+						ans=ans+document.form1.name.value;
+					}
+					else
+					{
+						ans="";
+					}
+					
+					return ans;
+				}
+				
+				<!-- 回傳性別 -->
+				function returnSex()
+				{
+					var ans="性別:";
+					
+					if(document.form1.sex.value=="男生")
+					{
+						ans=ans+"男生";
+					}
+					else if(document.form1.sex.value=="女生")
+					{
+						ans=ans+"女生";
+					}
+					else
+					{
+						ans="";
+					}
+					
+					return ans;
+				}
+				
+				<!-- 回傳年齡 -->
+				function returnAge()
+				{
+					var ans="年齡:";
+					
+					if(document.form1.age.value!="")
+					{
+						ans=ans+document.form1.age.value;
+					}
+					else
+					{
+						ans="";
+					}
+					
+					return ans;
+				}
+				
+				<!-- 回傳密碼狀態 -->
+				function returnPwStatus()
+				{
+					var ans="密碼";
+					
+					
+					if(document.form1.pw.value==""||checkPasswordLength(document.form1.pw.value))
+					{
+						ans="";
+					}
+					if(document.form1.rePw.value=="")
+					{
+						ans="";
+					}
+					else if(checkPasswordLength(document.form1.pw.value)&&checkPasswordIsSame())
+					{
+						ans=ans+"OK";
+					}
+					else
+					{
+						ans=ans+"NO";
+					}
+					
+					return ans;
+				}
+				
+				<!-- 回傳班級 -->
+				function returnClass()
+				{
+					var ans="";
+					
+					switch(document.form1.class.value)
+					{
+						case "請選擇":
+							ans="";
+							break;
+						case "資工1A":
+						case "資工1B":
+						case "資工2A":
+						case "資工2B":
+						case "資工3A":
+							ans=document.form1.class.value;
+							break;
+						default:
+							ans="";
+							alert("別鬧了");
+							break;
+					}
+					
+					return ans;
+				}
+				
+				<!-- 檢查密碼長度 -->
+				function checkPasswordLength(argPw)
+				{
+					if(argPw.length<6)
+					{
+						alert("密碼至少要6個字元");
+						
+						return false;
+					}
+					return true;
+				}
+				
+				<!-- 確認密碼相同 -->
+				function checkPasswordIsSame()
+				{
+					if(document.form1.pw.value!=document.form1.rePw.value)
+					{
+						alert("兩組密碼不符，請重新輸入");
+						document.form1.rePw.value="";
+						
+						return false;
+					}
+					return true;
+				}
+		
+			<!--  -->
+		</script>
+	</body>
+
+</html>

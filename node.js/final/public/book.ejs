@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <meta charset="utf-8"/> 
+      <meta name="viewport" content="width=devicewidth, initial-scale=1"> 
+      <title>first.html</title> 
+      <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" > 
+      <script src="jquery-2.1.4.min.js"></script>
+      <script src="jquery.mobile-1.4.5.min.js"></script>
+   </head> 
+
+   <body>
+      <div data-role="page" id="book1" data-title="book"> 
+         <div data-role="header" > 
+            <h1>預約</h1>
+         </div>
+         <h1>請輸入以下資料</h1>
+            <form method="post" role="form">
+              <fieldset>
+                  姓名<input type=text name="name" id="name" class="form-group" onblur="updateInputResult()" required><br>
+                  人數<input type=number name="peoples" id="peoples" class="form-group" onblur="updateInputResult()" required><br>
+                  連絡電話<input type=tel name="tel" id="tel" class="form-group" onblur="updateInputResult()" required><br>
+                  信箱<input type=email name="email" id="email" class="form-group" onchange="updateInputResult()" required><br>
+              <input type="submit" class="pure-button-primary" value="送出">
+              </fieldset>
+            </form>
+
+            <!--<script>
+            function updateInputResult()
+            {
+               var value=returnName()+" "+returnPeoples()+" "+returnTel()+" "+returnEmail();
+               
+               document.form1.inputResult.value=value;
+            }
+            
+            function returnName()
+            {
+               var ans="姓名:";
+               
+               if(document.form1.name.value!="")
+                  ans=ans+document.form1.name.value;
+               else
+                  ans="";
+               
+               return ans;
+            }
+            
+            function returnPeoples(){
+               var ans="人數:";
+               
+               if(document.form1.peoples.value!="")
+                  ans=ans+document.form1.peoples.value;
+               else
+                  ans="";
+               
+               return ans;
+            }
+
+            function returnEmail(){
+               var ans="信箱:";
+               
+               if(document.form1.email.value!="")
+                  ans=ans+document.form1.email.value;
+               else
+                  ans="";
+               
+               return ans;
+            }
+            
+            function returnTel(){
+               var ans="電話:";
+               
+               if(document.form1.tel.value!="")
+                  ans=ans+document.form1.tel.value;
+               else
+                  ans="";
+               
+               return ans;
+            }
+         </script>
+-->
+         </div>
+      </div>
+   </body>
+</html> 

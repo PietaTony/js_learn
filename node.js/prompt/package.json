@@ -1,0 +1,21 @@
+{
+  "name": "prompt-test",
+  "version": "1.0.0",
+  "description": "prompt test",
+  "main": "prompt.js",
+  "scripts": {
+    "test": "node prompt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PietaTony/js_learn/node.js/prompt"
+  },
+  "keywords": [
+    "prompt"
+  ],
+  "author": "Chia-Hao,Liu",
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "httpServer-test",
+  "version": "1.0.0",
+  "description": "httpServer test",
+  "main": "httpServer.js",
+  "scripts": {
+    "test": "node httpServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PietaTony/js_learn/node.js/httpServer"
+  },
+  "keywords": [
+    "httpServer"
+  ],
+  "author": "Chia-Hao,Liu",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}

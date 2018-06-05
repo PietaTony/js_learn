@@ -1,0 +1,10 @@
+{
+  "web": {
+    "client_id": "407452127811-cmk14fa6r06ne348paero1vgscrjq5ij.apps.googleusercontent.com",
+    "project_id": "grounded-burner-191711",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "KfHYM77TbOYJ_2FuDYXBSLSE"
+  }
+}
